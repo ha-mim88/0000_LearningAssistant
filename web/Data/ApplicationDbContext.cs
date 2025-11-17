@@ -1,5 +1,6 @@
 ﻿using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
+using web.Entities;
 
 namespace web.Data
 {
@@ -9,5 +10,8 @@ namespace web.Data
             : base(options)
         {
         }
+
+
+        public DbSet<Skill> Skill { get; set; }
     }
 }
